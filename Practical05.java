@@ -46,6 +46,15 @@ public class Practical05{
 			return number * factorial3(number-1);
 		}
 	}
+	
+	static int factorial4(int number) {
+	  int fact = 1;
+	  
+	  for(int i = 1; i <= number; i++) {
+	    fact *= i;
+	  }
+	  return fact;
+	}
 
 	static int getSum(int[] number){
 		if(number.length == 1){
