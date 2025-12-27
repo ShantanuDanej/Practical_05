@@ -46,12 +46,29 @@ public class Practical05{
 			return number * factorial3(number-1);
 		}
 	}
+	
+	static int factorial4(int number) {
+	  int fact = 1;
+	  
+	  for(int i = 1; i <= number; i++) {
+	    fact *= i;
+	  }
+	  return fact;
+	}
 
 	static int getSum(int[] number){
 		if(number.length == 1){
 			return number[0];
 		}
 		return number[0] + getSum(Arrays.copyOfRange(number, 1, number.length));
+	}
+	
+	static int getSum2(int[] numbers) {
+	  int sum = 0;
+	  for(int val : numbers) {
+	    sum += val;
+	  }
+	  return sum;
 	}
 	
 	public static void main(String[] args){
